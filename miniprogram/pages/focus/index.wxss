@@ -1,0 +1,170 @@
+.mode-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20rpx;
+}
+
+.mode-chip {
+  padding: 24rpx;
+  border: 2rpx solid transparent;
+  border-radius: 26rpx;
+  background: #ffffff;
+  color: #5f7d82;
+}
+
+.mode-chip-active {
+  border-color: #55b8bd;
+  background: #e0f4f4;
+  color: #0c6973;
+}
+
+.mode-name {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.mode-unit {
+  margin-top: 7rpx;
+  font-size: 21rpx;
+}
+
+.timer-shell {
+  display: flex;
+  height: 430rpx;
+  margin-top: 28rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 56rpx;
+  background: linear-gradient(145deg, #0c929d, #075d69);
+  box-shadow: 0 28rpx 70rpx rgba(8, 102, 113, 0.24);
+  color: #ffffff;
+}
+
+.timer-shell-rest {
+  background: linear-gradient(145deg, #36a883, #16725e);
+  box-shadow: 0 28rpx 70rpx rgba(22, 114, 94, 0.22);
+}
+
+.stage-pill {
+  padding: 12rpx 26rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.35);
+  border-radius: 30rpx;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 24rpx;
+  font-weight: 650;
+  letter-spacing: 4rpx;
+}
+
+.timer-value {
+  margin-top: 28rpx;
+  font-size: 106rpx;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2rpx;
+}
+
+.timer-caption {
+  margin-top: 10rpx;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 24rpx;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 180rpx;
+  gap: 18rpx;
+  margin-top: 28rpx;
+}
+
+.control-main,
+.control-secondary {
+  width: 100%;
+  margin: 0;
+}
+
+.immersive-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 34rpx;
+  padding: 28rpx;
+}
+
+.immersive-title {
+  color: #214f56;
+  font-size: 28rpx;
+  font-weight: 650;
+}
+
+.immersive-copy {
+  max-width: 470rpx;
+  margin-top: 8rpx;
+  color: #789094;
+  font-size: 22rpx;
+  line-height: 1.5;
+}
+
+.sound-section {
+  margin-top: 42rpx;
+}
+
+.sound-scroll {
+  width: calc(100% + 32rpx);
+}
+
+.sound-row {
+  display: flex;
+  padding: 0 32rpx 28rpx 0;
+}
+
+.sound-option {
+  width: 164rpx;
+  margin-right: 20rpx;
+  padding: 10rpx 10rpx 18rpx;
+  flex: 0 0 auto;
+  border: 2rpx solid transparent;
+  border-radius: 26rpx;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.sound-option-active {
+  border-color: #55b8bd;
+  background: #e7f6f6;
+}
+
+.sound-cover-wrap,
+.sound-cover {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 20rpx;
+}
+
+.sound-cover-wrap {
+  overflow: hidden;
+  background: linear-gradient(145deg, #72cdcd, #246b75);
+}
+
+.sound-name {
+  overflow: hidden;
+  margin-top: 13rpx;
+  color: #315f66;
+  font-size: 22rpx;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-state {
+  display: flex;
+  min-height: 130rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.compact-action {
+  margin: 0 0 0 20rpx;
+  padding: 14rpx 24rpx;
+}

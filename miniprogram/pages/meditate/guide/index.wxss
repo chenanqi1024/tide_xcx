@@ -1,0 +1,85 @@
+.guide-page {
+  display: flex;
+  min-height: 100vh;
+  padding: 42rpx 32rpx 60rpx;
+  box-sizing: border-box;
+  flex-direction: column;
+  background: linear-gradient(180deg, #e6f7f6 0%, #f4fbfb 70%);
+}
+
+.guide-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guide-title {
+  color: #214f56;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.guide-progress {
+  color: #087f8c;
+  font-size: 24rpx;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.progress-track {
+  overflow: hidden;
+  height: 8rpx;
+  margin-top: 20rpx;
+  border-radius: 8rpx;
+  background: #d4e9e9;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 8rpx;
+  background: #20a4ab;
+  transition: width 240ms ease-out;
+}
+
+.guide-stage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.guide-mark {
+  width: 24rpx;
+  height: 24rpx;
+  margin-bottom: 42rpx;
+  border: 12rpx solid rgba(8, 127, 140, 0.12);
+  border-radius: 50%;
+  background: #20a4ab;
+}
+
+.guide-paragraph {
+  max-width: 620rpx;
+  color: #234f56;
+  font-size: 38rpx;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.guide-hint {
+  margin-top: 36rpx;
+  color: #81989c;
+  font-size: 23rpx;
+}
+
+.guide-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18rpx;
+}
+
+.guide-controls button {
+  width: 100%;
+  margin: 0;
+}

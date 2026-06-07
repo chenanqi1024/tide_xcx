@@ -1,0 +1,63 @@
+.meditation-list {
+  display: grid;
+  gap: 22rpx;
+}
+
+.meditation-card {
+  display: grid;
+  grid-template-columns: 72rpx 1fr auto;
+  gap: 20rpx;
+  align-items: center;
+  overflow: hidden;
+  padding: 30rpx 26rpx;
+  border-radius: 32rpx;
+  background: linear-gradient(135deg, #ffffff, #e7f6f5);
+  box-shadow: 0 14rpx 38rpx rgba(20, 92, 101, 0.09);
+}
+
+.meditation-card-1 {
+  background: linear-gradient(135deg, #ffffff, #edf2fb);
+}
+
+.meditation-card-2 {
+  background: linear-gradient(135deg, #ffffff, #e8f7ef);
+}
+
+.meditation-card-3 {
+  background: linear-gradient(135deg, #ffffff, #f3f0fa);
+}
+
+.meditation-index {
+  color: rgba(8, 127, 140, 0.25);
+  font-size: 38rpx;
+  font-weight: 700;
+}
+
+.meditation-title {
+  color: #214f56;
+  font-size: 31rpx;
+  font-weight: 700;
+}
+
+.meditation-description {
+  margin-top: 9rpx;
+  color: #68858a;
+  font-size: 24rpx;
+  line-height: 1.55;
+}
+
+.meditation-duration {
+  margin-top: 13rpx;
+  color: #087f8c;
+  font-size: 21rpx;
+  font-weight: 650;
+}
+
+.meditation-action {
+  padding: 12rpx 18rpx;
+  border-radius: 28rpx;
+  background: rgba(255, 255, 255, 0.75);
+  color: #087f8c;
+  font-size: 22rpx;
+  font-weight: 650;
+}

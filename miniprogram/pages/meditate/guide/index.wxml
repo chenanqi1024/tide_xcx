@@ -1,0 +1,25 @@
+<view class="guide-page">
+  <view class="guide-top">
+    <view class="guide-title">{{meditation.title}}</view>
+    <view class="guide-progress">{{progressText}}</view>
+  </view>
+
+  <view class="progress-track">
+    <view
+      class="progress-fill"
+      style="width: {{progressPercent}}%;"
+    ></view>
+  </view>
+
+  <view class="guide-stage">
+    <view class="guide-mark"></view>
+    <view class="guide-paragraph">{{paragraph}}</view>
+    <view class="guide-hint">停留片刻，准备好后再继续</view>
+  </view>
+
+  <view class="guide-controls">
+    <button class="secondary-button" disabled="{{isFirst}}" bindtap="previous">上一段</button>
+    <button wx:if="{{!isLast}}" class="primary-button" bindtap="next">下一段</button>
+    <button wx:else class="primary-button" bindtap="finish">结束</button>
+  </view>
+</view>

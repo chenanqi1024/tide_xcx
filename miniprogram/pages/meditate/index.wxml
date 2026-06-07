@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="page-header">
+    <view class="eyebrow">QUIET MOMENT</view>
+    <view class="page-title">留一点空间给自己</view>
+    <view class="page-subtitle">短暂离开嘈杂，听见身体和内心的声音。</view>
+  </view>
+
+  <view class="meditation-list">
+    <view
+      wx:for="{{meditations}}"
+      wx:key="id"
+      class="meditation-card meditation-card-{{index}}"
+      data-id="{{item.id}}"
+      bindtap="openDetail"
+    >
+      <view class="meditation-index">0{{index + 1}}</view>
+      <view class="meditation-body">
+        <view class="meditation-title">{{item.title}}</view>
+        <view class="meditation-description">{{item.description}}</view>
+        <view class="meditation-duration">{{item.duration}}</view>
+      </view>
+      <view class="meditation-action">进入</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,139 @@
+page {
+  min-height: 100%;
+  background: #f4fbfb;
+  color: #153f46;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.container {
+  padding: 40rpx 32rpx 56rpx;
+  box-sizing: border-box;
+}
+
+.page-header {
+  margin-bottom: 34rpx;
+}
+
+.eyebrow {
+  margin-bottom: 10rpx;
+  color: #087f8c;
+  font-size: 22rpx;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+}
+
+.page-title {
+  color: #103f47;
+  font-size: 54rpx;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  margin-top: 14rpx;
+  color: #5f7d82;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+.card {
+  border: 1rpx solid rgba(8, 127, 140, 0.08);
+  border-radius: 32rpx;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16rpx 50rpx rgba(20, 92, 101, 0.09);
+}
+
+.section-title {
+  margin-bottom: 22rpx;
+  color: #204f56;
+  font-size: 30rpx;
+  font-weight: 650;
+}
+
+.primary-button,
+.secondary-button,
+.danger-button {
+  display: flex;
+  min-height: 92rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 46rpx;
+  font-size: 30rpx;
+  font-weight: 650;
+  line-height: 1;
+}
+
+.primary-button {
+  background: #087f8c;
+  color: #ffffff;
+  box-shadow: 0 14rpx 30rpx rgba(8, 127, 140, 0.24);
+}
+
+.secondary-button {
+  border: 2rpx solid #b9d8da;
+  background: #ffffff;
+  color: #24626a;
+}
+
+.danger-button {
+  background: #fff0ee;
+  color: #b64a3d;
+}
+
+.primary-button::after,
+.secondary-button::after,
+.danger-button::after {
+  border: 0;
+}
+
+.state-panel {
+  display: flex;
+  min-height: 420rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.state-title {
+  color: #234f56;
+  font-size: 32rpx;
+  font-weight: 650;
+}
+
+.state-description {
+  max-width: 520rpx;
+  margin-top: 14rpx;
+  color: #718b90;
+  font-size: 26rpx;
+  line-height: 1.6;
+}
+
+.state-action {
+  margin-top: 30rpx;
+  padding: 20rpx 42rpx;
+  border-radius: 40rpx;
+  background: #e0f3f3;
+  color: #087f8c;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.state-action::after {
+  border: 0;
+}
+
+.loading-dot {
+  width: 18rpx;
+  height: 18rpx;
+  margin-bottom: 28rpx;
+  border-radius: 50%;
+  background: #22b6bb;
+  box-shadow: -34rpx 0 #8ed7d7, 34rpx 0 #087f8c;
+}
+
+button[disabled] {
+  opacity: 0.48;
+}

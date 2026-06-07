@@ -1,0 +1,30 @@
+<view class="training-page">
+  <view class="training-header">
+    <view class="training-rhythm">{{pattern.rhythm}}</view>
+    <view class="training-title">{{pattern.title}}</view>
+    <view class="training-elapsed">已练习 {{elapsedText}}</view>
+  </view>
+
+  <view class="breath-stage">
+    <view
+      class="breath-ball"
+      style="transform: scale({{ballScale}}); transition-duration: {{transitionSeconds}}s;"
+    >
+      <view class="phase-label">{{phaseLabel}}</view>
+      <view class="phase-time">{{phaseRemaining}}</view>
+    </view>
+    <view class="breath-ring breath-ring-one"></view>
+    <view class="breath-ring breath-ring-two"></view>
+  </view>
+
+  <view class="training-copy">
+    {{running ? '跟随圆球的节奏，保持轻松自然' : '准备好后，开始你的呼吸练习'}}
+  </view>
+
+  <view class="training-controls">
+    <button class="primary-button" bindtap="toggleTraining">
+      {{running ? '暂停' : (started ? '继续' : '开始')}}
+    </button>
+    <button class="secondary-button" bindtap="endTraining">结束</button>
+  </view>
+</view>

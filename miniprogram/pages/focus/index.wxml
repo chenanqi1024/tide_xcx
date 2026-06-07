@@ -1,0 +1,74 @@
+<view class="container">
+  <view class="page-header">
+    <view class="eyebrow">DEEP FOCUS</view>
+    <view class="page-title">把注意力放在此刻</view>
+    <view class="page-subtitle">一次只做一件事，时间会给你答案。</view>
+  </view>
+
+  <view class="mode-row">
+    <view
+      wx:for="{{modes}}"
+      wx:key="label"
+      class="mode-chip {{modeIndex === index ? 'mode-chip-active' : ''}}"
+      data-index="{{index}}"
+      bindtap="selectMode"
+    >
+      <view class="mode-name">{{item.label}}</view>
+      <view class="mode-unit">专注 / 休息</view>
+    </view>
+  </view>
+
+  <view class="timer-shell {{stage === 'rest' ? 'timer-shell-rest' : ''}}">
+    <view class="stage-pill">{{stageLabel}}</view>
+    <view class="timer-value">{{remainingText}}</view>
+    <view class="timer-caption">{{running ? '正在进行' : '准备好后开始'}}</view>
+  </view>
+
+  <view class="controls">
+    <button
+      class="primary-button control-main"
+      bindtap="toggleTimer"
+    >
+      {{running ? '暂停' : '开始'}}
+    </button>
+    <button class="secondary-button control-secondary" bindtap="end">结束</button>
+  </view>
+
+  <view class="card immersive-card">
+    <view>
+      <view class="immersive-title">沉浸模式</view>
+      <view class="immersive-copy">专注期间离开小程序，本次计时将判定失败</view>
+    </view>
+    <switch color="#087f8c" checked="{{immersive}}" bindchange="toggleImmersive"></switch>
+  </view>
+
+  <view class="sound-section">
+    <view class="section-title">专注背景音</view>
+
+    <view wx:if="{{loading}}" class="card compact-state">
+      <view class="state-description">正在加载背景音...</view>
+    </view>
+
+    <view wx:elif="{{error}}" class="card compact-state">
+      <view class="state-description">背景音加载失败</view>
+      <button class="state-action compact-action" bindtap="retry">重试</button>
+    </view>
+
+    <scroll-view wx:else class="sound-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="sound-row">
+        <view
+          wx:for="{{sounds}}"
+          wx:key="id"
+          class="sound-option {{selectedSoundId === item.id ? 'sound-option-active' : ''}}"
+          data-id="{{item.id}}"
+          bindtap="selectSound"
+        >
+          <view class="sound-cover-wrap">
+            <image wx:if="{{item.cover}}" class="sound-cover" src="{{item.cover}}" mode="aspectFill"></image>
+          </view>
+          <view class="sound-name">{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

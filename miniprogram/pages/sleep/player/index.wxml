@@ -1,0 +1,46 @@
+<view class="container">
+  <view wx:if="{{loading}}" class="card state-panel">
+    <view class="loading-dot"></view>
+    <view class="state-title">正在准备声音</view>
+  </view>
+
+  <view wx:elif="{{error}}" class="card state-panel">
+    <view class="state-title">暂时无法播放</view>
+    <view class="state-description">请检查网络连接后重试。</view>
+    <button class="state-action" bindtap="retry">重新加载</button>
+  </view>
+
+  <view wx:else class="player-content">
+    <view class="cover-wrap">
+      <image wx:if="{{sound.cover}}" class="cover" src="{{sound.cover}}" mode="aspectFill"></image>
+      <view class="cover-shade"></view>
+      <view class="cover-label">WHITE NOISE</view>
+    </view>
+
+    <view class="sound-title">{{sound.name}}</view>
+    <view class="sound-hint">{{isPlaying ? '声音正在循环播放' : '轻触按钮开始播放'}}</view>
+
+    <button class="play-button" bindtap="togglePlay">
+      {{isPlaying ? '暂停' : '播放'}}
+    </button>
+
+    <view class="card timer-card">
+      <view class="timer-copy">
+        <view class="timer-title">睡眠定时</view>
+        <view class="timer-hint">选择醒来时间，到点将播放闹钟</view>
+      </view>
+
+      <picker mode="time" value="{{wakeTime}}" bindchange="chooseWakeTime">
+        <view class="time-picker">{{wakeTime || '选择醒来时间'}}</view>
+      </picker>
+
+      <view wx:if="{{timerStatus !== 'idle'}}" class="countdown-row">
+        <view>
+          <view class="countdown-label">{{timerStatus === 'alarm' ? '当前状态' : '距离醒来还有'}}</view>
+          <view class="countdown-value">{{remainingText}}</view>
+        </view>
+        <button class="cancel-timer" bindtap="cancelTimer">{{timerStatus === 'alarm' ? '停止' : '取消'}}</button>
+      </view>
+    </view>
+  </view>
+</view>

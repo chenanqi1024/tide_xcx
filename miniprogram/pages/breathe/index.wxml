@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="page-header">
+    <view class="eyebrow">BREATHE SLOWLY</view>
+    <view class="page-title">跟随呼吸，回到当下</view>
+    <view class="page-subtitle">不需要做得完美，只需慢一点，再慢一点。</view>
+  </view>
+
+  <view class="pattern-list">
+    <view
+      wx:for="{{patterns}}"
+      wx:key="id"
+      class="card pattern-card"
+      data-id="{{item.id}}"
+      bindtap="openTraining"
+    >
+      <view class="pattern-top">
+        <view>
+          <view class="pattern-title">{{item.title}}</view>
+          <view class="pattern-rhythm">{{item.rhythm}}</view>
+        </view>
+        <view class="pattern-arrow">开始</view>
+      </view>
+      <view class="pattern-scenario">{{item.scenario}}</view>
+    </view>
+  </view>
+</view>

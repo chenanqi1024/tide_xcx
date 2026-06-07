@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="page-header">
+    <view class="eyebrow">SLEEP WELL</view>
+    <view class="page-title">今晚，睡个好觉</view>
+    <view class="page-subtitle">选一段喜欢的声音，让思绪慢慢安静下来。</view>
+  </view>
+
+  <view wx:if="{{loading}}" class="card state-panel">
+    <view class="loading-dot"></view>
+    <view class="state-title">正在收集安静的声音</view>
+    <view class="state-description">请稍候片刻</view>
+  </view>
+
+  <view wx:elif="{{error}}" class="card state-panel">
+    <view class="state-title">声音暂时走远了</view>
+    <view class="state-description">请检查网络连接后重试。</view>
+    <button class="state-action" bindtap="retry">重新加载</button>
+  </view>
+
+  <view wx:else>
+    <view class="section-title">白噪音</view>
+    <view class="sound-grid">
+      <view
+        wx:for="{{sounds}}"
+        wx:key="id"
+        class="sound-card"
+        data-id="{{item.id}}"
+        bindtap="openSound"
+      >
+        <image wx:if="{{item.cover}}" class="sound-cover" src="{{item.cover}}" mode="aspectFill"></image>
+        <view class="sound-overlay"></view>
+        <view class="sound-name">{{item.name}}</view>
+        <view class="sound-play">播放</view>
+      </view>
+    </view>
+  </view>
+</view>

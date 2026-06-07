@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/sleep/index",
+    "pages/focus/index",
+    "pages/breathe/index",
+    "pages/meditate/index",
+    "pages/sleep/player/index",
+    "pages/breathe/training/index",
+    "pages/meditate/detail/index",
+    "pages/meditate/guide/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "潮汐",
+    "navigationBarBackgroundColor": "#f4fbfb",
+    "backgroundColor": "#f4fbfb",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#78909c",
+    "selectedColor": "#087f8c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/sleep/index",
+        "text": "睡眠"
+      },
+      {
+        "pagePath": "pages/focus/index",
+        "text": "专注"
+      },
+      {
+        "pagePath": "pages/breathe/index",
+        "text": "呼吸"
+      },
+      {
+        "pagePath": "pages/meditate/index",
+        "text": "冥想"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents"
+}

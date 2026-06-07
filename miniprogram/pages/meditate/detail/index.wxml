@@ -1,0 +1,22 @@
+<view class="detail-page">
+  <view class="detail-visual">
+    <view class="visual-orbit orbit-one"></view>
+    <view class="visual-orbit orbit-two"></view>
+    <view class="visual-core">
+      <view class="visual-label">GUIDED</view>
+      <view class="visual-time">{{meditation.duration}}</view>
+    </view>
+  </view>
+
+  <view class="detail-content">
+    <view class="eyebrow">MEDITATION</view>
+    <view class="detail-title">{{meditation.title}}</view>
+    <view class="detail-description">{{meditation.description}}</view>
+
+    <view class="card detail-note">
+      选择一个不被打扰的位置，保持舒适坐姿或躺姿。引导过程中只需要阅读文字，按自己的节奏前进。
+    </view>
+
+    <button class="primary-button start-button" bindtap="startGuide">开始冥想</button>
+  </view>
+</view>

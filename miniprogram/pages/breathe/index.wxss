@@ -1,0 +1,61 @@
+.pattern-list {
+  display: grid;
+  gap: 24rpx;
+}
+
+.pattern-card {
+  position: relative;
+  overflow: hidden;
+  padding: 32rpx;
+}
+
+.pattern-card::before {
+  position: absolute;
+  top: -60rpx;
+  right: -60rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  background: rgba(75, 190, 190, 0.1);
+  content: "";
+}
+
+.pattern-top {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pattern-title {
+  color: #214f56;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.pattern-rhythm {
+  margin-top: 8rpx;
+  color: #087f8c;
+  font-size: 25rpx;
+  font-weight: 650;
+  letter-spacing: 3rpx;
+}
+
+.pattern-arrow {
+  padding: 12rpx 22rpx;
+  border-radius: 28rpx;
+  background: #e3f5f5;
+  color: #087f8c;
+  font-size: 22rpx;
+  font-weight: 650;
+}
+
+.pattern-scenario {
+  position: relative;
+  margin-top: 28rpx;
+  padding-top: 24rpx;
+  border-top: 1rpx solid #e4eeee;
+  color: #69858a;
+  font-size: 26rpx;
+  line-height: 1.65;
+}

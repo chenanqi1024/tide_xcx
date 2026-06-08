@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "冥想"
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "top-nav": "/components/top-nav/index"
+  }
 }

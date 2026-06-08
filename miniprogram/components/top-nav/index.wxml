@@ -1,0 +1,6 @@
+<view class="top-nav" style="padding-top: {{statusBarHeight}}px;">
+  <view class="top-nav-content">
+    <image class="top-nav-icon" src="{{icon}}" mode="aspectFit"></image>
+    <view class="top-nav-title">{{title}}</view>
+  </view>
+</view>

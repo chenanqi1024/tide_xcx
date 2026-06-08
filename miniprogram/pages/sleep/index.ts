@@ -11,6 +11,15 @@ Page({
     this.loadSounds()
   },
 
+  onShow() {
+    const tabBar = this.getTabBar()
+    if (tabBar) {
+      tabBar.setData({
+        selected: 0,
+      })
+    }
+  },
+
   onPullDownRefresh() {
     this.loadSounds(true)
   },

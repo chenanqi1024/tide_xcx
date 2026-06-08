@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "呼吸"
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "top-nav": "/components/top-nav/index"
+  }
 }

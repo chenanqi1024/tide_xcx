@@ -1,4 +1,5 @@
-<view class="container">
+<top-nav title="专注" icon="/assets/tabbar/focus-active.png"></top-nav>
+<view class="container tab-page">
   <view class="page-header">
     <view class="eyebrow">DEEP FOCUS</view>
     <view class="page-title">把注意力放在此刻</view>

@@ -10,6 +10,10 @@ page {
   box-sizing: border-box;
 }
 
+.tab-page {
+  padding-bottom: calc(168rpx + env(safe-area-inset-bottom));
+}
+
 .page-header {
   margin-bottom: 34rpx;
 }

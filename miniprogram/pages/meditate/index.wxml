@@ -1,4 +1,5 @@
-<view class="container">
+<top-nav title="冥想" icon="/assets/tabbar/meditate-active.png"></top-nav>
+<view class="container tab-page">
   <view class="page-header">
     <view class="eyebrow">QUIET MOMENT</view>
     <view class="page-title">留一点空间给自己</view>

@@ -5,6 +5,15 @@ Page({
     meditations,
   },
 
+  onShow() {
+    const tabBar = this.getTabBar()
+    if (tabBar) {
+      tabBar.setData({
+        selected: 3,
+      })
+    }
+  },
+
   openDetail(event: WechatMiniprogram.BaseEvent) {
     const id = event.currentTarget.dataset.id
     wx.navigateTo({

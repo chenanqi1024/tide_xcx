@@ -1,4 +1,5 @@
-<view class="container">
+<top-nav title="呼吸" icon="/assets/tabbar/breathe-active.png"></top-nav>
+<view class="container tab-page">
   <view class="page-header">
     <view class="eyebrow">BREATHE SLOWLY</view>
     <view class="page-title">跟随呼吸，回到当下</view>

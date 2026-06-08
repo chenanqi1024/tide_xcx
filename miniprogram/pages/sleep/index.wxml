@@ -1,4 +1,5 @@
-<view class="container">
+<top-nav title="睡眠" icon="/assets/tabbar/sleep-active.png"></top-nav>
+<view class="container tab-page">
   <view class="page-header">
     <view class="eyebrow">SLEEP WELL</view>
     <view class="page-title">今晚，睡个好觉</view>
